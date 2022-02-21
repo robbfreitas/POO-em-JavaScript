@@ -1,4 +1,4 @@
-export class Funcionari {
+export class Funcionario {
     constructor(nome, salario, cpf) {
         this._nome = nome;
         this._salario = salario;
@@ -8,8 +8,8 @@ export class Funcionari {
         this._senha;
     }
 
-    get senha() {
-        return this._senha;
+    autenticar(senha) {
+        return senha === this._senha;
     }
 
     cadastrarSenha(senha) {
